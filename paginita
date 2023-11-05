@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raspberry Pi Control</title>
+    <!-- Aquí se pueden incluir estilos CSS -->
+</head>
+<body>
+    <h1>Raspberry Pi Control Panel</h1>
+    <button onclick="turnOnLed()">Encender LED</button>
+    <button onclick="turnOffLed()">Apagar LED</button>
+    <!-- Aquí puedes agregar elementos para leer el potenciómetro -->
+    <script>
+        function turnOnLed() {
+            fetch('/led/on');
+        }
+
+        function turnOffLed() {
+            fetch('/led/off');
+        }
+    </script>
+</body>
+</html>
